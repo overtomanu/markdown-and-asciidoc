@@ -1,0 +1,236 @@
+= AsciiDoc Article Title
+:author: Manohar Bhat
+:email: manohar.bhat@oracle.com
+:revnumber: 1.0
+:toc:
+:toclevels: 5
+:toc-title: My custom table of contents title
+:icons: font
+:description: Example AsciiDoc document
+:url-quickref: https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/
+
+Content entered directly below the header but before the first section heading is called the preamble.
+
+== First level heading - basic text formatting
+
+This is a paragraph with a *bold* word and an _italicized_ word. +
+force line breaks using space followed by plus
+
+*This is bold text*
+
+_This is cursiv text_
+
+`This is mono text`
+
+.Image caption
+image::https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg[I am the image alt text.]
+
+This is inline image
+image:https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg[alt text, width=5%], note that width 5% is specified
+
+.Image with 200x200 dimension
+
+image::https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg[200,200]
+
+This is another paragraph.footnote:[I am footnote text and will be displayed at the bottom of the article.]
+
+=== Second level heading
+
+==== Unordered list
+
+.Unordered list title
+* list item 1
+** nested list item
+*** nested nested list item 1
+*** nested nested list item 2
+* list item 2
+
+==== Numbered list
+.Parts of an atom
+. Protons
+. Electrons
+. Neutrons
+
+==== Numbered list with specific starting value
+[start=4]
+. Step four
+. Step five
+. Step six
+
+==== Reverse numbered list
+
+[%reversed]
+.Parts of an atom
+. Protons
+. Electrons
+. Neutrons
+
+==== Mixed nested list
+. Linux
+* Fedora
+* Ubuntu
+* Slackware
+. BSD
+* FreeBSD
+* NetBSD
+
+This is a paragraph.
+
+=== Different heading like text styles
+Heading 1
+^^^^^^^^^
+
+Another heading text
+~~~~~~~~~~~~~~~~~~~~
+
+=== Description lists
+
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+RAM:: Temporarily stores information the CPU uses during operation.
+Keyboard:: Used to enter text or control items on the screen.
+Mouse:: Used to point to and select items on your computer screen.
+Monitor:: Displays information in visual form using text and graphics.
+
+=== Using inline icons
+
+icon:comment[] This is a comment icon
+
+icon:file[] And a file icon
+
+icon:battery-full[] And a battery icon
+
+=== Defining external links
+http://www.google.com[google]
+
+=== Collapsible Elements
+.Title
+[%collapsible]
+====
+Normal asciidoc markup here
+====
+
+=== Underline
+The triple-plus macro is often used to output custom HTML or XML.
+The text +++<u>underline me</u>+++ is underlined.
+
+The text +++<b>is bolded</b>+++.
+
+This text is +++<i>italicized</i>+++.
+
+=== Arrows and symbols
+	
+<-  -> <= => (C) (R) (TM)
+
+
+=== source code highlighting
+
+* Code listing python:
++
+[source,python]
+-----------------
+#!/usr/bin/env python
+import antigravity
+try:
+  antigravity.fly()
+except FlytimeError as e:
+  # um...not sure what to do now.
+  pass
+-----------------
+
+.Simple Groovy Ratpack application
+[source,groovy,linenums,highlight='7-9']
+----
+package com.mrhaki
+ 
+import static ratpack.groovy.Groovy.ratpack
+ 
+ratpack {
+    handlers {
+        get {
+            render "Hello World!" // <1>
+        }
+    }
+}
+----
+<1> Render output
+
+.Example block title
+====
+Content in an example block is subject to normal substitutions.
+====
+
+.Sidebar title
+****
+Sidebars contain aside text and are subject to normal substitutions.
+****
+
+==== Third level heading - listing block
+
+[#id-for-listing-block]
+.Listing block title
+----
+Content in a listing block is subject to verbatim substitutions.
+Listing block content is commonly used to preserve code input.
+----
+
+===== Fourth level heading - tables
+
+====== Table with pipe
+
+.Table title
+|===
+|Column heading 1 |Column heading 2
+
+|Column 1, row 1
+|Column 2, row 1
+
+|Column 1, row 2
+|Column 2, row 2
+|===
+
+====== CSV table
+
+,===
+a,b,c
+,===
+
+====== Fifth level heading - quotes and verses
+
+[quote, Ben Parker, Spiderman Movie]
+____
+With great power comes great responsibility.
+____
+
+[verse, firstname lastname, poem title and more]
+____
+I am a verse block.
+  Indents and endlines are preserved in verse blocks.
+____
+
+== 2nd First level heading - admonition blocks - tip, note etc
+
+TIP: There are five admonition labels: Tip, Note, Important, Caution and Warning.
+
+Here are the other built-in admonition types:
+
+NOTE: Some additional info...
+
+IMPORTANT: Don't forget...
+
+WARNING: Watch out for...
+
+CAUTION: Ensure that...
+
+// I am a comment and won't be rendered.
+
+. ordered list item
+.. nested ordered list item
+. ordered list item
+
+The text at the end of this sentence is cross referenced to <<_third_level_heading,the third level heading>>
+
+== 3rd First level heading - adding links
+
+This is a link to the https://docs.asciidoctor.org/home/[Asciidoctor documentation].
+This is an attribute reference {url-quickref}[that links this text to the AsciiDoc Syntax Quick Reference].
