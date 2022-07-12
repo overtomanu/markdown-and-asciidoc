@@ -47,6 +47,8 @@ _this is italicised text_
 ## highlight
 I need to highlight these ==very important words==.
 
+In some of the platforms this is how you highlight. `very important words`
+
 ## subscript
 H~2~O
 
