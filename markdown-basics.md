@@ -45,9 +45,13 @@ _this is italicised text_
 ~~The world is flat.~~ We now know that the world is round.
 
 ## highlight
-I need to highlight these ==very important words==.
 
-In some of the platforms this is how you highlight. `very important words`
+I need to highlight these ==very important words==.
+Or use HTML tag <mark>very important words</mark>
+
+## text with color
+
+This is text with color (using inline code block) `very important words`
 
 ## subscript
 H~2~O
