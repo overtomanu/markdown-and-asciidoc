@@ -31,9 +31,11 @@
 - unordered
   - nested
 - list
+
 * use star or underscore to create unordered list
 
 # bolded and other formatted texts
+
 _this is italicised text_
 
 *this is emphasized text*
@@ -54,10 +56,10 @@ Or use HTML tag <mark>very important words</mark>
 This is text with color (using inline code block) `very important words`
 
 ## subscript
-H~2~O
+H<sub>2</sub>O
 
 ## superscript
-X^2^
+X<sup>2</sup>
 
 ## task list
 
@@ -93,6 +95,7 @@ can be multiline
   "age": 25
 }
 ```
+
 ## Showing table in markdown
 
 | Syntax      | Description | Test Text     |
@@ -101,6 +104,7 @@ can be multiline
 | Paragraph   | Middle aligned as there is colon on both sides        | Right aligned as colon is only present on right      |
 
 # Paragraphs
+
 This is a multiline paragraph  
 Insert two spaces at the end of previous line to have soft line break (force new line) after a sentence
 
@@ -113,8 +117,8 @@ This is a github link [Visit GitHub!](www.github.com)
 ## image display from link
 ![pretty tiger](https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg)
 
-
 ## referenced links
+
 Here's [a link to something else][another place].
 Here's [yet another link][another-link].
 And now back to [the first link][another place].
@@ -123,6 +127,7 @@ And now back to [the first link][another place].
 [another-link]: www.google.com
 
 # Footnotes
+
 Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
 [^1]: This is the first footnote.
