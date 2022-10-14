@@ -1,5 +1,36 @@
 # Markdown basics
 
+- [Markdown basics](#markdown-basics)
+- [Headings / titles](#headings--titles)
+- [Header one](#header-one)
+  - [Header two](#header-two)
+    - [Header three](#header-three)
+      - [Header four](#header-four)
+        - [Header five](#header-five)
+          - [Header six](#header-six)
+- [Lists](#lists)
+  - [ordered / numbered list](#ordered--numbered-list)
+  - [unordered lists](#unordered-lists)
+- [bolded and other formatted texts](#bolded-and-other-formatted-texts)
+  - [strikethrough](#strikethrough)
+  - [highlight](#highlight)
+  - [text with color](#text-with-color)
+  - [subscript](#subscript)
+  - [superscript](#superscript)
+  - [task list](#task-list)
+  - [multiline block quote](#multiline-block-quote)
+  - [Escaping text](#escaping-text)
+  - [code block](#code-block)
+  - [syntax highlighted code block](#syntax-highlighted-code-block)
+  - [Showing table in markdown](#showing-table-in-markdown)
+- [Paragraphs](#paragraphs)
+- [Links](#links)
+  - [image display from link](#image-display-from-link)
+  - [referenced links](#referenced-links)
+- [expand / details collapse](#expand--details-collapse)
+- [Footnotes](#footnotes)
+
+
 # Headings / titles
 
 # Header one
@@ -125,6 +156,19 @@ And now back to [the first link][another place].
 
 [another place]: www.github.com
 [another-link]: www.google.com
+
+# expand / details collapse
+
+<details>
+  <summary>Click me</summary>
+  
+  1. Foo
+  2. Bar
+     * Baz
+     * Qux
+
+</details>
+<br></br>
 
 # Footnotes
 
