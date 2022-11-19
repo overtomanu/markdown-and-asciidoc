@@ -8,10 +8,16 @@
       - [Header four](#header-four)
         - [Header five](#header-five)
           - [Header six](#header-six)
+- [Alternate syntax](#alternate-syntax)
+- [Heading level 1](#heading-level-1)
+  - [Heading level 2](#heading-level-2)
 - [Lists](#lists)
   - [ordered / numbered list](#ordered--numbered-list)
   - [unordered lists](#unordered-lists)
 - [bolded and other formatted texts](#bolded-and-other-formatted-texts)
+  - [line break](#line-break)
+  - [horizontal rule](#horizontal-rule)
+  - [URLs and Email Addresses](#urls-and-email-addresses)
   - [strikethrough](#strikethrough)
   - [highlight](#highlight)
   - [text with color](#text-with-color)
@@ -45,6 +51,14 @@
 
 ###### Header six
 
+# Alternate syntax
+
+Heading level 1
+===============
+
+Heading level 2
+---------------
+
 # Lists
 
 ## ordered / numbered list
@@ -74,7 +88,28 @@ _this is italicised text_
 >this is block quote text.
 >lines are combined
 
+## line break
+
+You can use two or more spaces (commonly referred to as “trailing whitespace”) for line breaks in nearly every Markdown application.
+This will not be rendered in new line  
+whereas this line will be in new line
+
+## horizontal rule
+
+use three hyphes or three stars to create horizontal rule
+
+---
+or
+***
+
+## URLs and Email Addresses
+
+<https://www.markdownguide.org>
+
+<fake@example.com>
+
 ## strikethrough
+
 ~~The world is flat.~~ We now know that the world is round.
 
 ## highlight
@@ -87,9 +122,11 @@ Or use HTML tag <mark>very important words</mark>
 This is text with color (using inline code block) `very important words`
 
 ## subscript
+
 H<sub>2</sub>O
 
 ## superscript
+
 X<sup>2</sup>
 
 ## task list
@@ -99,6 +136,7 @@ X<sup>2</sup>
 - [ ] Contact the media
 
 ## multiline block quote
+
 > this is 
 >multiline block quote
 >test line 3
@@ -119,6 +157,7 @@ can be multiline
     or a tab
 
 ## syntax highlighted code block
+
 ```json
 {
   "firstName": "John",
